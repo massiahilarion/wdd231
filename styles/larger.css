@@ -1,0 +1,19 @@
+@media (min-width:768px){
+  body{padding:0 1.25rem}
+  header{padding:.75rem 0}
+  .site-name{flex:none}
+  #menu{display:none}
+
+  nav ul{display:flex;flex-direction:row;background:var(--navy)}
+  nav a{padding:.85rem 1.1rem;border-bottom:0}
+
+  main{display:grid;grid-template-columns:2fr 1fr;column-gap:1.5rem}
+  main h1,.certificate{grid-column:1 / -1}
+  .about .panel,.photo .panel{height:calc(100% - 2.4rem)}
+  .about .panel{min-height:20rem}
+  .photo .panel{display:flex;align-items:center;justify-content:center}
+
+  .filters{gap:1.25rem}
+  .filters button{padding:.6rem}
+  .cards{grid-template-columns:repeat(3,1fr);gap:1.25rem}
+}

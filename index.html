@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Sunday Isaac Udoh  WDD 231</title>
+  <meta name="description" content="Course home page for Sunday Isaac Udoh, a Software Development student working on the Web and Computer Programming certificate.">
+  <meta name="author" content="Sunday Isaac Udoh">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site logo" width="48" height="48">
+    <span class="site-name">Sunday Isaac Udoh</span>
+    <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+  </header>
+
+  <nav>
+    <ul id="primary-nav">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <div class="panel">
+        <p>My name is Sunday Isaac Udoh and I go by Messiah.
+           I was born in Lagos State and live with my family
+            in Akwa-Ibom State, Nigeria. I am currently a
+            student of Brigham Young University. My family
+            is all I have got and I love spending time with them.
+            I love to travel and I love to learn new things.
+            I want to build user-friendly websites and apps that solve real problems,
+            help people learn, and make daily tasks easier,
+            while growing my programming skills and creating something truly meaningful.</p>
+      </div>
+    </section>
+
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <div class="panel">
+        <img src="images/sunday.jpg" alt="Portrait of Sunday Isaac Udoh" width="300" height="400">
+      </div>
+    </section>
+
+    <section class="certificate">
+      <h2>Web Certificate Courses</h2>
+      <div class="filters">
+        <button type="button" data-filter="all" class="active">All</button>
+        <button type="button" data-filter="CSE">CSE</button>
+        <button type="button" data-filter="WDD">WDD</button>
+      </div>
+      <p id="credits" class="credits"></p>
+      <ul id="course-cards" class="cards"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/in/YOUR-PROFILE" aria-label="LinkedIn"><img src="images/linkedin.png" alt="" width="48" height="48"></a></li>
+      <li><a href="https://github.com/YOUR-USERNAME/wdd231" aria-label="GitHub"><img src="images/github.png" alt="" width="48" height="48"></a></li>
+      <li><a href="https://x.com/YOUR-HANDLE" aria-label="X"><img src="images/twitter.png" alt="" width="48" height="48"></a></li>
+    </ul>
+    <div class="legal">
+      <p id="copyright"></p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

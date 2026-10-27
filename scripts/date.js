@@ -1,0 +1,2 @@
+document.querySelector('#copyright').textContent = `\u00A9 ${new Date().getFullYear()} \u2022 ✿ Sunday Isaac Udoh ✿ \u2022 lagos, Nigeria`;
+document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
