@@ -1,0 +1,26 @@
+@media (min-width: 48em) {
+  .site-header { flex-wrap: nowrap; padding: 0.75rem 2rem; }
+  .menu-toggle { display: none; }
+  .site-nav { width: auto; }
+  .site-nav ul, .site-nav.open ul { display: flex; flex-direction: row; gap: 0.25rem; }
+  .site-nav a { border-top: 0; border-radius: 4px; padding: 0.5rem 1rem; }
+
+  main { max-width: 70rem; margin: 0 auto; padding: 2rem; }
+  h1 { font-size: 2.3rem; }
+
+  #members.grid { grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+
+  #members.list .member {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 1fr 1.6fr 0.6fr;
+    gap: 1rem;
+    align-items: center;
+  }
+  #members.list .member .level { margin-top: 0; justify-self: start; }
+
+  .site-footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 2rem;
+  }
+  .footer-dev { text-align: right; }
+}

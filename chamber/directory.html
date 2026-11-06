@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Directory | Lagos City Chamber of Commerce</title>
+  <meta name="description" content="Browse member businesses of the Lagos City Chamber of Commerce. Find addresses, phone numbers, and websites for local companies.">
+  <meta name="author" content="Sunday Isaac Udoh">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Business Directory | Lagos City Chamber of Commerce">
+  <meta property="og:description" content="Browse member businesses of the Lagos City Chamber of Commerce.">
+  <meta property="og:image" content="https://massiahilarion.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://massiahilarion.github.io/wdd231/chamber/directory.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="40" height="40">
+      <span>Lagos City Chamber</span>
+    </a>
+
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+    <p class="intro">Meet the businesses that make our community work.</p>
+
+    <div class="view-toggle" role="group" aria-label="Choose how to view members">
+      <button id="grid-btn" type="button" aria-pressed="true" aria-label="Grid view">Grid</button>
+      <button id="list-btn" type="button" aria-pressed="false" aria-label="List view">List</button>
+    </div>
+
+    <section id="members" class="grid" aria-live="polite">
+      <p>Loading members&hellip;</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <h2>Contact the Chamber</h2>
+      <address>
+        10 Apapa street<br>
+        Lagos, Nigeria<br>
+        <a href="tel:+234">+2348113834969</a><br>
+        <a href="mailto:info@yourchamber.example">Lagoscitychamber@gmail.com</a>
+      </address>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> ✿ Sunday Isaac Udoh ✿</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
