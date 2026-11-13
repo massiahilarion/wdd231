@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Lagos City Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Lagos City Chamber of Commerce. See upcoming events, today's weather in Lagos, and spotlight member businesses.">
+  <meta name="author" content="Sunday Isaac Udoh">
+
+  <link rel="icon" href="images/logo.webp" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | Lagos City Chamber of Commerce">
+  <meta property="og:description" content="Welcome to the Lagos City Chamber of Commerce. Events, weather and spotlight members.">
+  <meta property="og:image" content="https://massiahilarion.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://massiahilarion.github.io/wdd231/chamber/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.webp" alt="" width="40" height="40">
+      <span>Lagos City Chamber</span>
+    </a>
+
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to the Lagos City Chamber of Commerce</h1>
+
+    <div class="hero">
+      <img src="images/hero.webp" alt="Illustration of the Lagos skyline at sunset beside the lagoon" width="1200" height="500" fetchpriority="high">
+      <a class="cta" href="join.html">Join the Chamber</a>
+    </div>
+
+    <div class="home-grid">
+      <section class="panel events" aria-labelledby="events-title">
+        <h2 id="events-title">Current Events</h2>
+        <ul class="events-list">
+          <li>
+            <time datetime="2026-11-20">Fri, 20 Nov 2026</time>
+            <p>Business Networking Mixer, Ikeja</p>
+          </li>
+          <li>
+            <time datetime="2026-12-05">Sat, 5 Dec 2026</time>
+            <p>Small Business Growth Workshop, Yaba</p>
+          </li>
+          <li>
+            <time datetime="2026-12-14">Mon, 14 Dec 2026</time>
+            <p>Lagos Trade and Market Fair, Victoria Island</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel weather" aria-labelledby="weather-title">
+        <h2 id="weather-title">Weather in Lagos</h2>
+        <div id="current-weather" aria-live="polite"><p>Loading weather&hellip;</p></div>
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast" class="forecast"></ul>
+      </section>
+    </div>
+
+    <section class="spotlights" aria-labelledby="spotlight-title">
+      <h2 id="spotlight-title">Member Spotlights</h2>
+      <div id="spotlights" class="spotlight-grid" aria-live="polite">
+        <p>Loading spotlights&hellip;</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <h2>Contact the Chamber</h2>
+      <address>
+        10 Apapa Street<br>
+        Lagos, Nigeria<br>
+        <a href="tel:+2348113834969">+2348113834969</a><br>
+        <a href="mailto:Lagoscitychamber@gmail.com">Lagoscitychamber@gmail.com</a>
+      </address>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> &#10047; Sunday Isaac Udoh &#10047;</p>
+      <p>WDD 231</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

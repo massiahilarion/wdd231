@@ -4,8 +4,8 @@
     "tagline": "Supermarket and household goods",
     "address": "14 Obafemi Awolowo Way, Ikeja, Lagos",
     "phone": "+234 801 000 0101",
-    "website": "https:freshmartbetter.com/ikejafreshmart",
-    "image": "Ikeja Fresh Mart_ Shop Fresh, Live Better.png",
+    "website": "https://freshmartbetter.com/ikejafreshmart",
+    "image": "Ikeja Fresh Shop, Live Better.webp",
     "level": 3
   },
   {
@@ -13,8 +13,8 @@
     "tagline": "Ankara, lace and aso-oke fabrics",
     "address": "22 Balogun Market Road, Lagos Island, Lagos",
     "phone": "+234 802 000 0102",
-    "website": "https:balogunfabrics.com/balogunfabrics",
-    "image": "Balogun Fabrics and Aso-Oke.png",
+    "website": "https://balogunfabrics.com/balogunfabrics",
+    "image": "Balogun Fabrics and Aso-Oke.webp",
     "level": 3
   },
   {
@@ -22,8 +22,8 @@
     "tagline": "Phones, laptops and accessories",
     "address": "9 Otigba Street, Ikeja, Lagos",
     "phone": "+234 803 000 0103",
-    "website": "https:computertechub.com/techhub",
-    "image": "Computer Village Tech Hub.png",
+    "website": "https://computertechub.com/techhub",
+    "image": "Computer Village Tech Hub.webp",
     "level": 2
   },
   {
@@ -31,8 +31,8 @@
     "tagline": "Books, stationery and school supplies",
     "address": "31 Bode Thomas Street, Surulere, Lagos",
     "phone": "+234 805 000 0104",
-    "website": "https:surulerebook.com/bookcorner",
-    "image": "Surulere Book Corner.png",
+    "website": "https://surulerebook.com/bookcorner",
+    "image": "Surulere Book Corner.webp",
     "level": 1
   },
   {
@@ -40,8 +40,8 @@
     "tagline": "Pharmacy and health products",
     "address": "5 Adetokunbo Ademola Street, Victoria Island, Lagos",
     "phone": "+234 806 000 0105",
-    "website": "https:victiriapharmacy.com/vipharmacy",
-    "image": "Victoria Island Pharmacy Wellness.png",
+    "website": "https://victiriapharmacy.com/vipharmacy",
+    "image": "Victoria Island Pharmacy Wellness.webp",
     "level": 2
   },
   {
@@ -49,8 +49,8 @@
     "tagline": "Fresh foodstuff and vegetables",
     "address": "18 Ikorodu Road, Mile 12, Lagos",
     "phone": "+234 807 000 0106",
-    "website": "https:mile12fresh.com/mile12fresh",
-    "image": "Mile 12 Fresh Produce Market.png",
+    "website": "https://mile12fresh.com/mile12fresh",
+    "image": "Mile 12 Fresh Produce Market.webp",
     "level": 1
   },
   {
@@ -58,8 +58,8 @@
     "tagline": "Furniture and home decor",
     "address": "12 Admiralty Way, Lekki Phase 1, Lagos",
     "phone": "+234 809 000 0107",
-    "website": "https:lekkihomefurnish.com/lekkihome",
-    "image": "Lekki Home Furnishings.png",
+    "website": "https://lekkihomefurnish.com/lekkihome",
+    "image": "Lekki Home Furnishings.webp",
     "level": 2
   }
 ]

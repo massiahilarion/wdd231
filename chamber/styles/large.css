@@ -18,6 +18,10 @@
   }
   #members.list .member .level { margin-top: 0; justify-self: start; }
 
+  .cta { bottom: 2rem; padding: 0.9rem 2rem; font-size: 1.1rem; }
+  .home-grid { grid-template-columns: 1fr 1fr; }
+  .spotlight-grid { grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+
   .site-footer {
     grid-template-columns: 1fr 1fr;
     padding: 1.5rem 2rem;
