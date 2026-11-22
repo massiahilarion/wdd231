@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join | Lagos City Chamber of Commerce</title>
+  <meta name="description" content="Apply to join the Lagos City Chamber of Commerce. Compare the NP, Bronze, Silver and Gold membership levels and submit your application.">
+  <meta name="author" content="Sunday Isaac Udoh">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Join | Lagos City Chamber of Commerce">
+  <meta property="og:description" content="Apply to join the Lagos City Chamber of Commerce.">
+  <meta property="og:image" content="https://massiahilarion.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://massiahilarion.github.io/wdd231/chamber/join.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.webp" alt="" width="40" height="40">
+      <span>Lagos City Chamber</span>
+    </a>
+
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Lagos City Chamber</h1>
+    <p class="intro">Complete the form to start your membership application. Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
+
+    <div class="join-layout">
+      <form class="join-form" action="thankyou.html" method="get">
+        <label>First Name <span class="req" aria-hidden="true">*</span>
+          <input type="text" name="fname" title="Enter your first name" autocomplete="given-name" required>
+        </label>
+
+        <label>Last Name <span class="req" aria-hidden="true">*</span>
+          <input type="text" name="lname" title="Enter your last name" autocomplete="family-name" required>
+        </label>
+
+        <label>Organizational Title
+          <input type="text" name="orgtitle" title="Letters, hyphens and spaces only, at least 7 characters" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}">
+        </label>
+
+        <label>Email Address <span class="req" aria-hidden="true">*</span>
+          <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="name@example.com" required>
+        </label>
+
+        <label>Mobile Phone Number <span class="req" aria-hidden="true">*</span>
+          <input type="tel" name="mobile" title="Enter your mobile phone number" autocomplete="tel" required>
+        </label>
+
+        <label>Business / Organization Name <span class="req" aria-hidden="true">*</span>
+          <input type="text" name="bizname" title="Enter your business or organization name" autocomplete="organization" required>
+        </label>
+
+        <label>Membership Level <span class="req" aria-hidden="true">*</span>
+          <select name="level" title="Choose a membership level" autocomplete="off" required>
+            <option value="" selected disabled>Choose a level</option>
+            <option value="np">NP Membership (non-profit, no fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>Business Description
+          <textarea name="description" title="Briefly describe your business or organization" autocomplete="off" rows="4"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <button type="submit">Submit Application</button>
+      </form>
+
+      <aside class="membership" aria-labelledby="levels-title">
+        <h2 id="levels-title">Membership Levels</h2>
+        <div class="level-cards">
+          <article class="level-card np">
+            <h3>NP Membership</h3>
+            <p>For non-profit organizations. No fee.</p>
+            <a href="#np-modal" data-modal="np-modal">View NP benefits</a>
+          </article>
+          <article class="level-card bronze">
+            <h3>Bronze Membership</h3>
+            <p>A great start for small businesses.</p>
+            <a href="#bronze-modal" data-modal="bronze-modal">View Bronze benefits</a>
+          </article>
+          <article class="level-card silver">
+            <h3>Silver Membership</h3>
+            <p>More visibility and training.</p>
+            <a href="#silver-modal" data-modal="silver-modal">View Silver benefits</a>
+          </article>
+          <article class="level-card gold">
+            <h3>Gold Membership</h3>
+            <p>Our top level with the most exposure.</p>
+            <a href="#gold-modal" data-modal="gold-modal">View Gold benefits</a>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <dialog id="np-modal" aria-labelledby="np-title">
+    <div class="modal-body">
+      <h2 id="np-title">NP Membership</h2>
+      <p class="price">No fee (non-profit organizations)</p>
+      <ul>
+        <li>Listing in the member directory</li>
+        <li>Monthly chamber newsletter</li>
+        <li>Invitations to community events</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </div>
+  </dialog>
+
+  <dialog id="bronze-modal" aria-labelledby="bronze-title">
+    <div class="modal-body">
+      <h2 id="bronze-title">Bronze Membership</h2>
+      <p class="price">&#8358;25,000 per year</p>
+      <ul>
+        <li>Everything in NP Membership</li>
+        <li>Directory listing with your company logo</li>
+        <li>10% discount on chamber events</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </div>
+  </dialog>
+
+  <dialog id="silver-modal" aria-labelledby="silver-title">
+    <div class="modal-body">
+      <h2 id="silver-title">Silver Membership</h2>
+      <p class="price">&#8358;60,000 per year</p>
+      <ul>
+        <li>Everything in Bronze Membership</li>
+        <li>Business training workshops</li>
+        <li>Eligible for home page spotlights</li>
+        <li>20% discount on chamber events</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </div>
+  </dialog>
+
+  <dialog id="gold-modal" aria-labelledby="gold-title">
+    <div class="modal-body">
+      <h2 id="gold-title">Gold Membership</h2>
+      <p class="price">&#8358;120,000 per year</p>
+      <ul>
+        <li>Everything in Silver Membership</li>
+        <li>Priority home page spotlight positions</li>
+        <li>Advertising in the chamber newsletter</li>
+        <li>Free booth at the annual trade fair</li>
+        <li>30% discount on chamber events</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <h2>Contact the Chamber</h2>
+      <address>
+        10 Apapa Street<br>
+        Lagos, Nigeria<br>
+        <a href="tel:+2348113834969">+2348113834969</a><br>
+        <a href="mailto:Lagoscitychamber@gmail.com">Lagoscitychamber@gmail.com</a>
+      </address>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> &#10047; Sunday Isaac Udoh &#10047;</p>
+      <p>WDD 231</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -27,4 +27,8 @@
     padding: 1.5rem 2rem;
   }
   .footer-dev { text-align: right; }
+
+  .join-layout { grid-template-columns: 3fr 2fr; align-items: start; }
+  .join-form { padding: 1.5rem; }
+  .join-form button[type="submit"] { width: auto; min-width: 12rem; }
 }

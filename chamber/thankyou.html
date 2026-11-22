@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | Lagos City Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying to join the Lagos City Chamber of Commerce. Here is a summary of your application.">
+  <meta name="author" content="Sunday Isaac Udoh">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.webp" alt="" width="40" height="40">
+      <span>Lagos City Chamber</span>
+    </a>
+
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Applying!</h1>
+    <p class="intro">We appreciate your interest in the Lagos City Chamber of Commerce. A chamber representative will contact you soon. Here is what you submitted:</p>
+
+    <section class="panel summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Your Application</h2>
+      <dl id="summary"></dl>
+    </section>
+
+    <p class="back-link"><a href="index.html">Back to the home page</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <h2>Contact the Chamber</h2>
+      <address>
+        10 Apapa Street<br>
+        Lagos, Nigeria<br>
+        <a href="tel:+2348113834969">+2348113834969</a><br>
+        <a href="mailto:Lagoscitychamber@gmail.com">Lagoscitychamber@gmail.com</a>
+      </address>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> &#10047; Sunday Isaac Udoh &#10047;</p>
+      <p>WDD 231</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
