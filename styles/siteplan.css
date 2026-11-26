@@ -1,0 +1,133 @@
+/* Discover Akwa Ibom - site plan styles
+   Colors: Forest Green #1F5C3A, Palm Gold #E0A526, Warm Cream #FFF8E7, White #FFFFFF, Charcoal #222222
+   Fonts: Playfair Display (headings), Open Sans (body) */
+
+:root {
+  --green: #1F5C3A;
+  --gold: #E0A526;
+  --cream: #FFF8E7;
+  --white: #FFFFFF;
+  --charcoal: #222222;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--charcoal);
+  background-color: var(--cream);
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--green);
+  line-height: 1.25;
+}
+
+.site-header {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 6px solid var(--gold);
+}
+.site-header h1 { color: var(--white); margin: 0 0 0.5rem; font-size: 1.75rem; }
+.site-header p { margin: 0; }
+
+.plan-nav { background-color: var(--white); border-bottom: 2px solid var(--gold); }
+.plan-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+}
+.plan-nav a {
+  display: inline-block;
+  padding: 0.5rem 0.25rem;
+  color: var(--green);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.plan-nav a:hover, .plan-nav a:focus { border-bottom-color: var(--gold); }
+
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+
+section {
+  background-color: var(--white);
+  border-left: 6px solid var(--gold);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+section h2 { margin-top: 0; font-size: 1.5rem; }
+section h3 { font-size: 1.15rem; }
+
+.highlight {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--green);
+  margin: 0.5rem 0;
+}
+
+.card {
+  background-color: var(--cream);
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+.card h3 { margin-top: 0; }
+
+.swatches { list-style: none; padding: 0; margin: 1rem 0; }
+.swatches li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.swatch {
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: 2px solid var(--charcoal);
+}
+.swatch-green { background-color: var(--green); }
+.swatch-gold { background-color: var(--gold); }
+.swatch-cream { background-color: var(--cream); }
+.swatch-white { background-color: var(--white); }
+.swatch-charcoal { background-color: var(--charcoal); }
+code { font-family: "Open Sans", Arial, sans-serif; font-weight: 600; color: var(--charcoal); }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 1rem; }
+caption { text-align: left; font-weight: 600; color: var(--green); padding-bottom: 0.5rem; }
+th, td { border: 1px solid var(--charcoal); padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+thead th { background-color: var(--green); color: var(--white); }
+tbody th { background-color: var(--cream); color: var(--charcoal); }
+
+.sample-heading { font-family: "Playfair Display", Georgia, serif; font-size: 1.25rem; font-weight: 700; color: var(--green); }
+.sample-body { font-family: "Open Sans", Arial, sans-serif; }
+
+figure { margin: 1rem 0; text-align: center; }
+figure img { max-width: 100%; height: auto; border: 2px solid var(--charcoal); background-color: var(--white); }
+figcaption { margin-top: 0.5rem; font-weight: 600; color: var(--green); }
+
+.site-footer {
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  border-top: 6px solid var(--gold);
+}
+.site-footer p { margin: 0; }
+
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+@media (min-width: 700px) {
+  .site-header h1 { font-size: 2.25rem; }
+  main { padding: 2rem 1rem; }
+  section { padding: 1.5rem 2rem; }
+}

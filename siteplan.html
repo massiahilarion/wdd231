@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Plan | Discover Akwa Ibom</title>
+  <meta name="description" content="Website plan for Discover Akwa Ibom, a three-page tourism guide for Akwa Ibom State, Nigeria.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Site Plan: Discover Akwa Ibom</h1>
+    <p>WDD 231 Individual Website Project &ndash; Sunday Isaac Udoh</p>
+  </header>
+
+  <nav class="plan-nav" aria-label="Site plan sections">
+    <ul>
+      <li><a href="#site-name">Site Name</a></li>
+      <li><a href="#site-purpose">Purpose</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="#color-scheme">Colors</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#wireframe">Wireframe</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="site-name">
+      <h2>1. Site Name</h2>
+      <p class="highlight"><strong>Discover Akwa Ibom</strong></p>
+      <p>The name is short, easy to remember, and includes the state name, which helps people find the site when they search for Akwa Ibom. The word &ldquo;Discover&rdquo; tells visitors the site is about finding new places, food, and experiences.</p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>2. Site Purpose</h2>
+      <p>Discover Akwa Ibom is a three-page information website that helps tourists, diaspora Nigerians planning a visit, and local residents find things to see and do in Akwa Ibom State. It brings attractions, local food and culture, festivals and events, and practical travel tips together in one organized place.</p>
+      <h3>Information and services provided</h3>
+      <ul>
+        <li><strong>Attractions:</strong> a filterable list of places to visit.</li>
+        <li><strong>Food and culture:</strong> local dishes and cultural highlights.</li>
+        <li><strong>Festivals and events:</strong> what is happening and when.</li>
+        <li><strong>Travel tips:</strong> practical advice for planning a trip.</li>
+        <li><strong>Current weather:</strong> live conditions from a weather API.</li>
+        <li><strong>Inquiry form:</strong> a way to ask questions or get in touch.</li>
+      </ul>
+      <h3>Planned pages</h3>
+      <div class="table-wrap">
+        <table>
+          <caption>The three pages of the site</caption>
+          <thead>
+            <tr><th scope="col">Page</th><th scope="col">Purpose</th><th scope="col">Key content</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Home</th><td>Welcome visitors and introduce the guide</td><td>Welcome message, featured attractions, current weather</td></tr>
+            <tr><th scope="row">Attractions</th><td>Main content and directory page</td><td>Filterable list of places from a JSON file, food and culture</td></tr>
+            <tr><th scope="row">Plan Your Visit</th><td>Help visitors prepare and connect</td><td>Festivals, travel tips, contact or inquiry form</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="scenarios">
+      <h2>3. Scenarios</h2>
+      <p>These are questions a typical visitor would ask. The website content is designed to answer them.</p>
+      <article class="card">
+        <h3>Scenario 1: The diaspora traveler</h3>
+        <p><strong>Who:</strong> A Nigerian living abroad who is planning a trip home in December.</p>
+        <p><strong>Questions:</strong> What are the best places to visit in Akwa Ibom? What will the weather be like when I arrive? Which festivals or events will be happening during my stay?</p>
+        <p><strong>Answered by:</strong> the Home page weather, the Attractions page, and the festivals section of Plan Your Visit.</p>
+      </article>
+      <article class="card">
+        <h3>Scenario 2: The first-time tourist</h3>
+        <p><strong>Who:</strong> A visitor from another country who has never been to the state.</p>
+        <p><strong>Questions:</strong> What local food should I try? What cultural experiences are worth my time? What do I need to know before I travel, and how can I ask someone a question?</p>
+        <p><strong>Answered by:</strong> the food and culture content, the travel tips, and the inquiry form.</p>
+      </article>
+      <article class="card">
+        <h3>Scenario 3: The local resident</h3>
+        <p><strong>Who:</strong> Someone who lives in the state and wants something to do with family or friends.</p>
+        <p><strong>Questions:</strong> What events are coming up? Which attractions are near me that I have not visited yet?</p>
+        <p><strong>Answered by:</strong> the festivals and events section and the filterable attractions list.</p>
+      </article>
+    </section>
+
+    <section id="color-scheme">
+      <h2>4. Color Scheme</h2>
+      <p>These five colors will be used across the whole website. This plan document uses only these colors.</p>
+      <ul class="swatches">
+        <li><span class="swatch swatch-green" aria-hidden="true"></span><strong>Forest Green</strong> <code>#1F5C3A</code></li>
+        <li><span class="swatch swatch-gold" aria-hidden="true"></span><strong>Palm Gold</strong> <code>#E0A526</code></li>
+        <li><span class="swatch swatch-cream" aria-hidden="true"></span><strong>Warm Cream</strong> <code>#FFF8E7</code></li>
+        <li><span class="swatch swatch-white" aria-hidden="true"></span><strong>White</strong> <code>#FFFFFF</code></li>
+        <li><span class="swatch swatch-charcoal" aria-hidden="true"></span><strong>Charcoal</strong> <code>#222222</code></li>
+      </ul>
+      <div class="table-wrap">
+        <table>
+          <caption>Where each color will be used</caption>
+          <thead>
+            <tr><th scope="col">Color</th><th scope="col">Used for</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Forest Green</th><td>Headings, header and footer backgrounds, links, main buttons</td></tr>
+            <tr><th scope="row">Palm Gold</th><td>Accents: borders, underlines, and link hover states</td></tr>
+            <tr><th scope="row">Warm Cream</th><td>Main page background</td></tr>
+            <tr><th scope="row">White</th><td>Card and table backgrounds, text on green backgrounds</td></tr>
+            <tr><th scope="row">Charcoal</th><td>Paragraph and body text</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Dark text on the cream and white backgrounds, and white text on forest green, keep contrast high for accessibility.</p>
+    </section>
+
+    <section id="typography">
+      <h2>5. Typography</h2>
+      <p>Two fonts, both from Google Fonts, will be used across the site.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Selected fonts and where they are applied</caption>
+          <thead>
+            <tr><th scope="col">Font</th><th scope="col">Used for</th><th scope="col">Sample</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Playfair Display (serif), with Georgia and serif as fallbacks</th>
+              <td>Site name, page titles, and headings</td>
+              <td><span class="sample-heading">Discover Akwa Ibom</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Open Sans (sans-serif), with Arial and sans-serif as fallbacks</th>
+              <td>Body text, navigation, buttons, forms, tables, and captions</td>
+              <td><span class="sample-body">Explore beaches, culture, food, and festivals.</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="wireframe">
+      <h2>6. Wireframe</h2>
+      <p>Hand-drawn black and white sketches of the home page layout for a small screen (mobile) and a large screen (desktop/tablet).</p>
+      <figure>
+        <img src="images/mobile.webp" alt="Hand-drawn wireframe of the home page on a small mobile screen" width="360" height="640">
+        <figcaption>Home page: small viewport</figcaption>
+      </figure>
+      <figure>
+        <img src="images/desktop.webp" alt="Hand-drawn wireframe of the home page on a large desktop or tablet screen" width="960" height="600">
+        <figcaption>Home page: large viewport</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Sunday Isaac Udoh &ndash; WDD 231.</p>
+  </footer>
+</body>
+</html>
