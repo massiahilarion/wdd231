@@ -317,3 +317,74 @@ dialog::backdrop { background: rgba(18, 50, 74, 0.65); }
 .summary dd { margin: 0 0 1rem; overflow-wrap: anywhere; }
 .back-link { margin-top: 1.5rem; }
 .back-link a { color: var(--accent); font-weight: bold; }
+
+.visit-message {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--accent-light);
+  color: var(--navy);
+  font-weight: bold;
+  border-left: 6px solid var(--accent);
+  border-radius: 4px;
+}
+.visit-message:empty { display: none; }
+
+.area-info { margin-bottom: 1.5rem; }
+
+.places {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+.card8 { grid-area: card8; }
+
+.place-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+.place-card h2 { font-size: 1.15rem; color: var(--navy); margin-bottom: 0.5rem; }
+.place-card figure {
+  margin: 0 0 0.75rem;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.place-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+.place-card address { font-weight: bold; margin-bottom: 0.5rem; }
+.place-card p { margin-bottom: 1rem; }
+.place-card button {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: bold;
+  border: 0;
+  border-radius: 4px;
+}
+.place-card button:hover { background: var(--navy); }

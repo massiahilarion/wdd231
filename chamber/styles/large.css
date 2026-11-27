@@ -32,3 +32,35 @@
   .join-form { padding: 1.5rem; }
   .join-form button[type="submit"] { width: auto; min-width: 12rem; }
 }
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .places {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card1"
+      "card2 card3"
+      "card4 card5"
+      "card6 card6"
+      "card7 card8";
+  }
+}
+
+@media (min-width: 1025px) {
+  .places {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card2 card6"
+      "card7 card7 card7 card8";
+  }
+}
+
+@media (min-width: 641px) {
+  .place-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  .place-card img:hover {
+    transform: scale(1.08);
+    filter: saturate(1.4) brightness(1.05);
+  }
+}

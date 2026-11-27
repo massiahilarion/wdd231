@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Lagos | Lagos City Chamber of Commerce</title>
+  <meta name="description" content="Discover places to visit in Lagos, including museums, beaches, markets and cultural centres, and learn about the area our chamber members call home.">
+  <meta name="author" content="Sunday Isaac Udoh">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Discover Lagos | Lagos City Chamber of Commerce">
+  <meta property="og:description" content="Discover Lagos: museums, beaches, markets and cultural spots near our chamber members, from Lekki to Lagos Island.">
+  <meta property="og:image" content="https://massiahilarion.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://massiahilarion.github.io/wdd231/chamber/discover.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.webp" alt="" width="40" height="40">
+      <span>Lagos City Chamber</span>
+    </a>
+
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html" aria-current="page">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Lagos City Chamber</h1>
+    <p class="intro">Explore the city our chamber members call home.</p>
+
+    <p id="visit-message" class="visit-message" role="status"></p>
+
+    <section class="panel area-info" aria-labelledby="about-title">
+      <h2 id="about-title">About Lagos</h2>
+      <p>Lagos is Nigeria's largest city and its main commercial centre, with a metropolitan population commonly estimated at more than 15 million people. It is home to people from every part of Nigeria and has a strong Yoruba heritage. English is the official language, and Yoruba is widely spoken. Set between the Atlantic coast and a busy lagoon, Lagos is known for its markets, music, art, food and beaches, which makes it a great place to do business and to visit.</p>
+    </section>
+
+    <section id="places" class="places" aria-label="Places to visit in Lagos"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <h2>Contact the Chamber</h2>
+      <address>
+        10 Apapa Street<br>
+        Lagos, Nigeria<br>
+        <a href="tel:+2348113834969">+2348113834969</a><br>
+        <a href="mailto:Lagoscitychamber@gmail.com">Lagoscitychamber@gmail.com</a>
+      </address>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> &#10047; Sunday Isaac Udoh &#10047;</p>
+      <p>WDD 231</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
